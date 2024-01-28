@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='traccar_api',
-    version='0.1.0',
+    version='0.1.1',
     description='Python client for interacting with Traccar GPS tracking API',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
