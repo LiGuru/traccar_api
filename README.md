@@ -1,7 +1,7 @@
 ## Import
 
 ```
-from external_services.traccar_api.api import TraccarApi
+from traccar_api.api import TraccarApi
 ```
 
 ## Initial
@@ -64,7 +64,17 @@ unlink_driver2_device1 = traccar.unlink_diver_device(driver_id=302, device_id=3)
 ```
 # Errors
 ```
-test_errors = traccar.test_error()
+try:
+
+    current_user = traccar.login()
+    
+except TraccarApiAuthenticationError as e:
+
+    print(f"Authentication error: {e}")
+    
+except TraccarApiError as e:
+
+    print(f"API error: {e}")
 ```
 # LogOut
 ```
