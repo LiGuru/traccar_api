@@ -8,7 +8,7 @@ setup(
     long_description_content_type='text/markdown',
     author='LiGuru',
     author_email='services.nvlahovski@gmail.com',
-    url='https://github.com/scrt-nvlahovski/traccar_api',
+    url='https://github.com/LiGuru/traccar_api',
     packages=find_packages(),
     install_requires=[
         'requests>=2.25.1',
